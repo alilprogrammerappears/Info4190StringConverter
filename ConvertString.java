@@ -21,7 +21,7 @@ public class ConvertString {
         String option = input.next().toLowerCase();
         
         if (option.equals("upper")){
-            upperConverter.convertUppercase(stringInput);
+            convertedString = upperConverter.convertUppercase(stringInput);
         }
         else if (option.equals("lower")){
             convertedString = lowerConverter.convertLowercase(stringInput);
