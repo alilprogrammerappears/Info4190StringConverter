@@ -2,6 +2,7 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+//this file tests the convert upper feature
 public class TestUpper {
     
     @Test
