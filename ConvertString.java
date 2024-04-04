@@ -1,12 +1,13 @@
 import java.util.Scanner;
-import ConvertUpper;
 
 public class ConvertString {
     
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
-        ConvertUpper converter = new ConvertUpper();
+        String convertedString = "";
+        ConvertUpper upperConverter = new ConvertUpper();
+        ConvertLower lowerConverter = new ConvertLower();
 
         System.out.println("Hiya! Welcome to a String Converter(tm)!");
         System.out.println("This is a super simple program, but it'll let you convert a string to lower or uppercase!");
@@ -20,15 +21,16 @@ public class ConvertString {
         String option = input.next().toLowerCase();
         
         if (option.equals("upper")){
-            converter.convertUppercase(stringInput);
+            upperConverter.convertUppercase(stringInput);
         }
         else if (option.equals("lower")){
-            convertLowercase(stringInput);
+            convertedString = lowerConverter.convertLowercase(stringInput);
         }
         else {
             System.out.println("That wasn't an option. Please restart :(");
         }
-
+        
+        System.out.println("Converted string: " + convertedString);
         System.out.println();
         System.out.println("Hey, thanks for trying this out. See ya around!");
         System.out.println("-----Kassandra");
