@@ -13,7 +13,7 @@ public class ConvertString {
         System.out.println("This is a super simple program, but it'll let you convert a string to lower or uppercase!");
         System.out.println();
         System.out.println("To get your converted string, first enter a string:");
-        String stringInput = input.next();
+        String stringInput = input.nextLine();
         
         System.out.println();
         System.out.print("Next, tell me what you would like to convert it to by entering either 'upper' or 'lower':");
