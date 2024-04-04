@@ -5,6 +5,7 @@ public class ConvertString {
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
+        String convertedString = "";
         ConvertUpper upperConverter = new ConvertUpper();
         ConvertLower lowerConverter = new ConvertLower();
 
@@ -23,12 +24,13 @@ public class ConvertString {
             upperConverter.convertUppercase(stringInput);
         }
         else if (option.equals("lower")){
-            lowerConverter.convertLowercase(stringInput);
+            convertedString = lowerConverter.convertLowercase(stringInput);
         }
         else {
             System.out.println("That wasn't an option. Please restart :(");
         }
-
+        
+        System.out.println("Converted string: " + convertedString);
         System.out.println();
         System.out.println("Hey, thanks for trying this out. See ya around!");
         System.out.println("-----Kassandra");
