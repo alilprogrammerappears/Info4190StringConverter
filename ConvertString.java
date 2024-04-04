@@ -1,10 +1,12 @@
 import java.util.Scanner;
+import ConvertUpper;
 
 public class ConvertString {
     
     public static void main(String[] args) {
         
         Scanner input = new Scanner(System.in);
+        ConvertUpper converter = new ConvertUpper();
 
         System.out.println("Hiya! Welcome to a String Converter(tm)!");
         System.out.println("This is a super simple program, but it'll let you convert a string to lower or uppercase!");
@@ -18,7 +20,7 @@ public class ConvertString {
         String option = input.next().toLowerCase();
         
         if (option.equals("upper")){
-            convertUppercase(stringInput);
+            converter.convertUppercase(stringInput);
         }
         else if (option.equals("lower")){
             convertLowercase(stringInput);
