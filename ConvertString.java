@@ -20,6 +20,7 @@ public class ConvertString {
         
         String option = input.next().toLowerCase();
         
+        //convert input based on option
         if (option.equals("upper")){
             convertedString = upperConverter.convertUppercase(stringInput);
         }
